@@ -1,7 +1,3 @@
-@tailwind base;
-@tailwind components;
-@tailwind utilities;
-
 #Header{
   border: 1px solid rgb(185, 176, 176);
   border-top: none;
@@ -32,4 +28,34 @@
 
 body{
   background-color: rgb(148, 191, 217);
+}
+
+.dialog{
+  position: relative;
+  z-index: 50;
+}
+
+.modal{
+  position: fixed;
+  inset: 0;
+  display: flex;
+  width: 100vw;
+}
+
+.panel{
+  max-width: 16em;
+  max-height: 16em;
+  margin: auto;
+  border: solid;
+  background-color: white;
+  padding: 3rem;
+}
+
+.title{
+  font: bold;
+}
+
+.cancel{
+  display: flex ;
+  gap: 1rem;
 }
