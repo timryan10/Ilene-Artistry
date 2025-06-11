@@ -14,9 +14,8 @@
 }
 
 #lene{
-  margin-left: 25%;
-  margin-right: 25%;
-  margin-top: 5em;
+  display: flex;
+  justify-content: center;
 }
 
 #about{
@@ -43,19 +42,56 @@ body{
 }
 
 .panel{
-  max-width: 16em;
-  max-height: 16em;
+  max-width: 25em;
+  max-height: 40em;
   margin: auto;
   border: solid;
   background-color: white;
-  padding: 3rem;
+  padding: 1rem;
 }
 
 .title{
   font: bold;
+  text-align: center;
 }
 
 .cancel{
   display: flex ;
   gap: 1rem;
+}
+
+.makeARequest{
+  border: none;
+  background-color: rgb(148, 191, 217);
+}
+
+.makeARequest:hover{
+  opacity: 0.5;
+}
+
+.description{
+  text-align: center;
+}
+
+.refMail{
+  display: flex;
+  justify-content: space-evenly;
+  text-align: center;
+}
+
+.address{
+  display: flex;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+  text-align: center;
+}
+
+.modalDescrip{
+  text-align: center;
+}
+
+.buttons{
+  display: flex;
+  justify-content: space-evenly;
+  margin-top: 1em;
 }
