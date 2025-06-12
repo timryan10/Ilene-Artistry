@@ -2,6 +2,7 @@ import './index.css';
 import { Description, Dialog, DialogPanel, DialogTitle } from '@headlessui/react';
 import { useState } from 'react';
 import Request from './Request';
+import { Link } from 'react-router-dom';
 
 function Header() {
 
@@ -13,7 +14,7 @@ function Header() {
                 <h1>Ilene's Artistry</h1>
             </div>
             <div>
-                <h3>Portfolio</h3>
+                <Link to="/portfolio">Portfolio</Link>
             </div>
             <div>
                 <button className='makeARequest' onClick={() => setIsOpen(true)}> <h3>Make A Request</h3> </button>
@@ -38,7 +39,7 @@ function Header() {
                 </Dialog>
             </div>
             <div>
-                <h3>About The Artist</h3>
+            <Link to="/about">About the artist</Link>
             </div>
         </div>
     )
