@@ -10,14 +10,14 @@ function Header() {
 
     return(
         <div id='Header'>
-            <div id='logo'>
-                <h1>Ilene's Artistry</h1>
+            <div>
+               <Link to="/" id='logo'> <h1>Ilene's Artistry</h1> </Link> 
             </div>
             <div>
-                <Link to="/portfolio">Portfolio</Link>
+                <Link to="/portfolio" className='portfolio'><h3>Portfolio</h3></Link>
             </div>
             <div>
-                <button className='makeARequest' onClick={() => setIsOpen(true)}> <h3>Make A Request</h3> </button>
+                <h3 className='makeARequest' onClick={() => setIsOpen(true)}>Make A Request</h3> 
                 <Dialog open={isOpen} onClose={() => setIsOpen(false)} className="dialog">
                     <div className='modal'>
                         <DialogPanel className="panel">
@@ -39,7 +39,7 @@ function Header() {
                 </Dialog>
             </div>
             <div>
-            <Link to="/about">About the artist</Link>
+            <Link to="/about" className='about'><h3> About the artist </h3></Link>
             </div>
         </div>
     )
