@@ -3,6 +3,7 @@ import { Description, Dialog, DialogPanel, DialogTitle } from '@headlessui/react
 import { useState } from 'react';
 import Request from './Request';
 import { Link } from 'react-router-dom';
+import profile_pic from "./imgs/pp_lene.png"
 
 function Header() {
 
@@ -11,7 +12,7 @@ function Header() {
     return(
         <div id='Header'>
             <div>
-               <Link to="/" id='logo'> <h1>Ilene's Artistry</h1> </Link> 
+               <Link to="/" id='logo'> <img src={profile_pic} alt='Logo' height="50em" width="50em" id='profile_pic'/> <h1>Ilene's Artistry</h1> </Link> 
             </div>
             <div>
                 <Link to="/portfolio" className='portfolio'><h3>Portfolio</h3></Link>
@@ -37,9 +38,6 @@ function Header() {
                         </DialogPanel>
                     </div>
                 </Dialog>
-            </div>
-            <div>
-            <Link to="/about" className='about'><h3> About the artist </h3></Link>
             </div>
         </div>
     )

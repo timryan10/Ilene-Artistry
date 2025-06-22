@@ -12,6 +12,12 @@
   color: black;
   margin-right: 20em;
   text-decoration: none;
+  display: flex;
+}
+
+#profile_pic{
+  margin-top: 1em;
+  margin-right: 1em;
 }
 
 #lene{
@@ -105,4 +111,12 @@ body{
 .portfolio{
   color: black;
   text-decoration: none;
+}
+
+#login{
+  margin-left: 40%;
+}
+
+#loginSubmit{
+  margin-top: 1em;
 }
